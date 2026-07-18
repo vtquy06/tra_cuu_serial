@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tra Cứu Tồn Kho</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Ẩn thanh cuộn của trang cha */
+            background-color: #f5f7fb; /* Màu nền khớp với ứng dụng của bạn */
+        }
+        .iframe-wrapper {
+            position: absolute;
+            top: -15px; /* Đẩy iframe lên trên 50px để che đi banner của Google */
+            left: 0;
+            width: 100%;
+            height: calc(100% + 15px); /* Bù lại 50px chiều cao đã bị đẩy lên */
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="iframe-wrapper">
+        <!-- Thay link Web App của bạn vào phần src dưới đây -->
+        <iframe src="https://script.google.com/macros/s/AKfycbzkio97udVYRZw8lVXTYlgQwTG9YcZTdUurEdBRla3D9Bcs2hyS4rYzxXa6_TMSp4lL/exec"></iframe>
+    </div>
+
+</body>
+</html>
