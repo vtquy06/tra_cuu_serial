@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tra Cứu Tồn Kho</title>
+    <title>Hệ Thống Tra Cứu Tồn Kho BCCS</title>
     <style>
         * {
             margin: 0;
@@ -13,15 +13,16 @@
         html, body {
             width: 100%;
             height: 100%;
-            overflow: hidden; /* Ẩn thanh cuộn của trang cha */
-            background-color: #f5f7fb; /* Màu nền khớp với ứng dụng của bạn */
+            overflow: hidden; /* Ẩn thanh cuộn của trang gốc */
+            background-color: #f4f6f9; 
         }
-        .iframe-wrapper {
+        .iframe-container {
             position: absolute;
-            top: -15px; /* Đẩy iframe lên trên 50px để che đi banner của Google */
+            top: -50px; /* Đẩy iframe lên 50px để giấu hoàn toàn banner cảnh báo của Google */
             left: 0;
             width: 100%;
-            height: calc(100% + 15px); /* Bù lại 50px chiều cao đã bị đẩy lên */
+            /* Tăng chiều cao thêm 50px để bù lại phần bị đẩy lên, giúp app không bị hụt chân trang */
+            height: calc(100% + 50px); 
         }
         iframe {
             width: 100%;
@@ -32,8 +33,8 @@
 </head>
 <body>
 
-    <div class="iframe-wrapper">
-        <!-- Thay link Web App của bạn vào phần src dưới đây -->
+    <div class="iframe-container">
+        <!-- Thay link Web App đã được cấu hình ALLOWALL của bạn vào đây -->
         <iframe src="https://script.google.com/macros/s/AKfycbywVPMWkUWJznUMs7Eqd855slNYlpqI7DXNvNbx0O1bjBTxiZ9pPkuXwdEp--xz4669/exec"></iframe>
     </div>
 
